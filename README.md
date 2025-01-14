@@ -1,3 +1,5 @@
+See this [article](https://dev.to/yingzhong_xu_20d6f4c5d4ce/from-core-audio-to-llms-native-macos-audio-capture-for-ai-powered-tools-dkg) for more details.
+
 # Native Audio Manager for macOS
 
 A native Node.js module that provides system-level audio device management and capture capabilities for macOS applications. This module is particularly useful for Electron applications that need to interact with system audio devices and capture audio streams.
