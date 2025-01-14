@@ -1,0 +1,14 @@
+{
+  "name": "audio-manager-native",
+  "version": "0.1.0",
+  "scripts": {
+    "configure": "node-gyp configure",
+    "install": "npx electron-rebuild -f -m ./"
+  },
+  "dependencies": {
+    "node-addon-api": "^8.3.0"
+  },
+  "main": "build/Release/nativeAudioManager.node",
+  "types": "native-audio-manager.d.ts",
+  "gypfile": true
+}

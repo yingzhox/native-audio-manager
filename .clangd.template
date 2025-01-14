@@ -1,0 +1,23 @@
+CompileFlags:
+  Add: 
+    - "-x"
+    - "objective-c++"
+    - "-std=c++17"
+    - "-I{{NODE_GYP_PATH}}/include/node"
+    - "-F/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks"
+    - "-I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include"
+    - "-I/opt/homebrew/lib/node_modules/node-addon-api"
+  Remove: 
+    - "-W*"
+    - "-std=*"
+
+Diagnostics:
+  ClangTidy:
+    Add: 
+      - modernize*
+      - performance*
+    Remove: 
+      - modernize-use-trailing-return-type
+
+Index:
+  Background: Build

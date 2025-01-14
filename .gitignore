@@ -1,0 +1,4 @@
+build
+bin
+.clangd
+node_modules
