@@ -1,6 +1,28 @@
 {
   "name": "audio-manager-native",
   "version": "0.1.0",
+  "description": "A native Node.js module for macOS that provides system-level audio device management and capture capabilities",
+  "author": "Xu Yingzhong",
+  "license": "MIT",
+  "keywords": [
+    "audio",
+    "macos",
+    "native",
+    "electron",
+    "audio-capture",
+    "core-audio",
+    "node-addon"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yingzxu/native-audio-manager"
+  },
+  "os": [
+    "darwin"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
   "scripts": {
     "configure": "node-gyp configure",
     "install": "npx electron-rebuild -f -m ./"
